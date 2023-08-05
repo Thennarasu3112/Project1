@@ -25,7 +25,7 @@ async def find_id(id : int, q : Union[str,None] = None):
         return {"EMPLOYEE_ID" : data[len(data)-1][0] ,
             "FIRST_NAME" : data[len(data)-1][1] ,
             "LAST_NAME" : data[len(data)-1][2] ,
-            "EMAIL" : data[len(data)-1][3].lower() + "@vit.ac.in" ,
+            "EMAIL" : data[len(data)-1][3].lower() + "@academic.ac.in" ,
             "PHONE_NUMBER" : data[len(data)-1][4] ,
             "HIRE_DATE" : data[len(data)-1][5] ,
             "JOB_ID" : data[len(data)-1][6] ,
