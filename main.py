@@ -16,7 +16,7 @@ async def index():
 async def find_id(id : int, q : Union[str,None] = None):
     qry = '''SELECT * FROM employees WHERE EMPLOYEE_ID = ''' + str(id)
     try:
-        conn = cx_Oracle.connect('HR/hr@localhost:1521/XEPDB1')
+        conn = cx_Oracle.connect(Conn_str)
         print("Connected!")
         cur = conn.cursor()
         cur.execute(qry)
